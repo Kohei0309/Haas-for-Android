@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#555533</color>
+    <color name="colorPrimaryDark">#555533</color>
+    <color name="colorAccent">#555533</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="gray_1">#1a1a1a</color>
+    <color name="gray_2">#333333</color>
+    <color name="gray_3">#666666</color>
+    <color name="gray_4">#808080</color>
+    <color name="gray_5">#999999</color>
+    <color name="gray_6">#c8c8c8</color>
+    <color name="gray_7">#cccccc</color>
+    <color name="gray_8">#f2f2f2</color>
+    <color name="gray_9">#fafafa</color>
+    <color name="blue_1">#1d50a2</color>
+    <color name="blue_2">#007aff</color>
+    <color name="orange_1">#ea7b08</color>
+    <color name="orange_2">#f3981c</color>
+    <color name="red_1">#e54833</color>
+    <color name="pink_1">#e06080</color>
+    <color name="green_1">#298948</color>
+
+    <color name="white_alpha_10">#1affffff</color>
+    <color name="white_alpha_20">#33ffffff</color>
+    <color name="white_alpha_40">#65ffffff</color>
+    <color name="white_alpha_54">#8affffff</color>
+    <color name="white_alpha_70">#b3ffffff</color>
+    <color name="black_alpha_10">#1a000000</color>
+    <color name="black_alpha_12">#1f000000</color>
+    <color name="black_alpha_17">#2b000000</color>
+    <color name="black_alpha_20">#34000000</color>
+    <color name="black_alpha_24">#3d000000</color>
+    <color name="black_alpha_26">#42000000</color>
+    <color name="black_alpha_30">#4d000000</color>
+    <color name="black_alpha_38">#61000000</color>
+    <color name="black_alpha_50">#7f000000</color>
+    <color name="black_alpha_54">#8a000000</color>
+    <color name="black_alpha_56">#8f000000</color>
+    <color name="black_alpha_70">#b3000000</color>
+    <color name="black_alpha_87">#de000000</color>
+    <color name="gray_1_alpha_54">#8a1a1a1a</color>
+    <color name="gray_1_alpha_87">#de1a1a1a</color>
+    <color name="gray_2_alpha_38">#61333333</color>
+    <color name="gray_2_alpha_87">#de333333</color>
+    <color name="blue_1_alpha_50">#801d50a2</color>
+    <color name="blue_1_alpha_54">#8a1d50a2</color>
+    <color name="blue_1_alpha_79">#bf1d50a2</color>
+    <color name="blue_1_alpha_87">#de1d50a2</color>
+
+</resources>

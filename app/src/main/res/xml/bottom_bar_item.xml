@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@mipmap/ic_home_white_24dp"
+        id="@+id/tab_home"
+        title="Home" />
+    <tab
+        icon="@mipmap/ic_cake_white_24dp"
+        id="@+id/tab_recipe"
+        title="Recipe" />
+    <tab
+        icon="@mipmap/ic_shopping_basket_white_24dp"
+        id="@+id/tab_shop"
+        title="Shop" />
+    <tab
+        icon="@mipmap/ic_supervisor_account_white_24dp"
+        id="@+id/tab_my_page"
+        title="My Page" />
+</tabs>

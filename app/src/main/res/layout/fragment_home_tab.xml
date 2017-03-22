@@ -1,0 +1,221 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.ring.trick.haasapplication.viewmodel.HomeTabViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carousel_view"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:fillColor="@color/white"
+                app:pageColor="@color/transparent"
+                app:radius="4dp"
+                app:slideInterval="3000"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp"
+                tools:background="@color/gray_6" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:src="@drawable/header_logo" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:src="@drawable/leaf_01" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Items"
+                    android:textSize="20sp" />
+
+                <android.support.v7.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:columnCount="3"
+                    app:rowCount="2"
+                    app:useDefaultMargins="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="@{viewModel.onClickInformation}"
+                        android:orientation="vertical"
+                        app:layout_column="0"
+                        app:layout_columnWeight="1"
+                        app:layout_row="0"
+                        app:layout_rowWeight="1">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/circle_01" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="Information" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="@{viewModel.onClickEvent}"
+                        android:orientation="vertical"
+                        app:layout_column="1"
+                        app:layout_columnWeight="1"
+                        app:layout_row="0"
+                        app:layout_rowWeight="1">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/circle_05" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="Event" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:clickable="true"
+                        android:onClick="@{viewModel.onClickShop}"
+                        android:orientation="vertical"
+                        app:layout_column="0"
+                        app:layout_columnWeight="1"
+                        app:layout_row="1"
+                        app:layout_rowWeight="1">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/circle_04" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="店舗" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:clickable="true"
+                        android:onClick="@{viewModel.onClickHaas}"
+                        android:orientation="vertical"
+                        app:layout_column="1"
+                        app:layout_columnWeight="1"
+                        app:layout_row="1"
+                        app:layout_rowWeight="1">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/circle_03" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="ハース＆ハース" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:clickable="true"
+                        android:onClick="@{viewModel.onClickBeginer}"
+                        android:orientation="vertical"
+                        app:layout_column="2"
+                        app:layout_columnWeight="1"
+                        app:layout_row="1"
+                        app:layout_rowWeight="1">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/circle_02" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="初めての方" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.GridLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>
